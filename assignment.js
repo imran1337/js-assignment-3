@@ -1,5 +1,4 @@
-// repo link : https://github.com/imran1337/js-assignment-3
-// code lik : https://github.com/imran1337/js-assignment-3/blob/main/assignment.js
+// https://github.com/imran1337/js-assignment-3
 
 // kilometer to meter
 const kilometerToMeter = (kilometer = 0) =>
@@ -8,7 +7,7 @@ const kilometerToMeter = (kilometer = 0) =>
     : typeof kilometer === "string"
     ? `Invalid value.Value can't be string`
     : kilometer * 1000;
-    
+
 // budgetCalculator
 const budgetCalculator = (watch = 0, phone = 0, laptop = 0) => {
   const watchPrice = 50;
