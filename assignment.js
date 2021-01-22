@@ -1,6 +1,10 @@
 // kilometer to meter
 const kilometerToMeter = (kilometer = 0) =>
-  kilometer < 0 ? `negative value not allowed` : typeof kilometer === 'string' ? `Invalid value.Value can't be string` : kilometer * 1000;
+  kilometer < 0
+    ? `negative value not allowed`
+    : typeof kilometer === "string"
+    ? `Invalid value.Value can't be string`
+    : kilometer * 1000;
 
 // budgetCalculator
 const budgetCalculator = (watch = 0, phone = 0, laptop = 0) => {
@@ -28,9 +32,11 @@ const hotelCost = (day = 0) =>
     : 10 * 100 + 10 * 80 + (day - 20) * 50;
 
 // megaFriend
-const megaFriend = (nameArr) =>
-  nameArr.length != 0
-    ? nameArr.reduce((previews, current) =>
+const megaFriend = (nameArr = 0) =>
+  nameArr.length <= 0
+    ? `empty array`
+    : typeof nameArr === "string"
+    ? `Value can't be string`
+    : nameArr.reduce((previews, current) =>
         previews.length > current.length ? previews : current
-      )
-    : `empty array`;
+      );
